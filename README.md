@@ -6,7 +6,10 @@ mean js app: backend + frontend. Node.js
 1. npm
 2. also, `npm install -g nodemon` for auto update server files
 
-##build(server) project files
+##build(server `\` ) project files
+- `npm install`
+
+##build(client `\client`) project files
 - `npm install`
 
 ##run(server):
