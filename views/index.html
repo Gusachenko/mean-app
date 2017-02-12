@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta charset="utf-8">
-<title>index</title>
-<meta name="description" content="">
-<meta name="author" content="gg">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="">
-<!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-<link rel="shortcut icon" href="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta name="description" content="">
+    <meta name="author" content="gg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="src/styles.css">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="src/systemjs.config.js"></script>
+    <script>
+    System.import('src/main.js').catch(function(err){ console.error(err); });
+    </script>
 </head>
 <body>
-
-
-
-
-
 
 
 
@@ -37,7 +45,7 @@
         <span class="response-block__result">response</span>
     </div>
 
-
+    <my-app>Loading AppComponent content here ...</my-app>
 
 
 
@@ -48,6 +56,6 @@
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src="src/custom/script.js"></script>
 </body>
 </html>
