@@ -1,0 +1,21 @@
+<h1> {{name}} </h1>
+<div class="db-form-auth">
+        <p><b>DB Auth: </b></p>
+        <p>
+            <md-input-container>
+                <input mdInput [(ngModel)]="inputName" class="db-form-auth__input-name" type="text" name="name" placeholder="login">
+            </md-input-container>
+        </p>
+        <p>
+            <md-input-container>
+                <input mdInput [(ngModel)]="inputPass" class="db-form-auth__input-password" type="password" name="password" placeholder="password">
+            </md-input-container>
+        </p>
+        <p>
+            <button md-raised-button (click)="connectToMongo();" class="db-form-auth__btn-connect"  type="button" >Connect <md-icon>data_usage</md-icon></button>
+            <button md-button (click)="clearForm();" type="reset">Reset</button>
+        </p>   
+</div>
+<div class="response-block">
+    <span class="response-block__result">{{result}}</span>
+</div>
