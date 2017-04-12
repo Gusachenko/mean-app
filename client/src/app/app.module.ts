@@ -6,6 +6,9 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent }  from './app.component.js';
 
+import 'zone.js';
+import 'hammerjs';
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule, MaterialModule ],
   declarations: [ AppComponent ],
