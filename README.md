@@ -1,4 +1,4 @@
-# mean_app
+# mean-app
 mean js app: backend + frontend. Node.js
 
 ##required environment:
